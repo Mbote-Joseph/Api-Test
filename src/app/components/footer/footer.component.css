@@ -20,4 +20,6 @@ footer {
   padding: 20px;
   text-align: center;
   color: #fff;
+  position: fixed;
+  bottom: 0;
 }
