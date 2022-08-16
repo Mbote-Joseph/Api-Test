@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
   getBooks() {
     this.apiService.getBooks().subscribe((data) => {
       this.books = data;
+      console.log(this.books);
     });
   }
 
   ngOnInit(): void {
     this.getBooks();
-    console.log(this.books);
   }
 }

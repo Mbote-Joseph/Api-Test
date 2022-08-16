@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  url: string = 'http://localhost:8000/book';
+  url: string = 'http://localhost:8000/book/get';
   book: Book[] = [];
 
   constructor(private http: HttpClient) {}
