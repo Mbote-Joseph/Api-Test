@@ -1,3 +1,32 @@
-<div *ngFor="let book of books">
-  <p>{{ book.name }}</p>
+<div class="container my-2">
+  <div class="row">
+    <div
+      class="col-md-9 col-md-9 col-md-offset-9 col-sm-12"
+      *ngFor="let book of books"
+    >
+      <div class="card">
+        <div class="card-header">
+          {{ book.name }}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ book.description }}</h5>
+          <p class="card-text">{{ book.created_at }}</p>
+          <a href="#" class="btn btn-primary">{{ book.price }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-3 col-md-offset-3 col-sm-12 but">
+      <div class="d-grid gap-2">
+        <div *ngFor="let book of books">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            style="width: 100%"
+          >
+            {{ book.name }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
